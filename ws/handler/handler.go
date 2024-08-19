@@ -22,7 +22,7 @@ func WsHandler(w http.ResponseWriter, r *http.Request) {
 			log.Println("read:", err)
 			break
 		}
-		log.Printf("recv: %s", message)
+		log.Printf("recv -- 2: %s", message)
 		err = c.WriteMessage(mt, message)
 		if err != nil {
 			log.Println("write:", err)

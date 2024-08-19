@@ -39,7 +39,7 @@ func main() {
 				log.Println("read:", err)
 				return
 			}
-			log.Printf("recv: %s", message)
+			log.Printf("recv -- 1 : %s", message)
 		}
 	}()
 
